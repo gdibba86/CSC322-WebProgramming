@@ -1,0 +1,39 @@
+/* Reset and font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(to right, #0d6efd, #6610f2);
+}
+
+/* ABOUT SECTION */
+#about {
+    background-color: #f9f9f9;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* PORTFOLIO CARDS */
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADINGS */
+h2 {
+    color: #0d6efd;
+    margin-bottom: 1.5rem;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 2rem;
+}
