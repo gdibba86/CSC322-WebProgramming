@@ -24,11 +24,11 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="hero text-center text-light py-5">
+    <section class="hero text-center text-light py-5 bg-primary">
         <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p class="lead">
-                21-year Army veteran | Technical Support Senior Advisor | Lifelong Learner
+            <h1 class="display-5 fw-bold">Welcome to My Portfolio</h1>
+            <p class="lead mb-0">
+                21-year Army Veteran | Technical Support Senior Advisor | Lifelong Learner
             </p>
         </div>
     </section>
@@ -36,17 +36,16 @@
     <!-- ABOUT ME SECTION -->
     <section id="about" class="py-5">
         <div class="container">
-            <h2>About Me</h2>
+            <h2 class="mb-3">About Me</h2>
             <p>
-                Hi! My name is Gibril Dibba. I’m a 21-year Army veteran currently working as a contractor
-                with the U.S. Air Force. I have experience in computer repair and technical support,
-                and I’m actively strengthening my web programming and networking skills.
+                Hi! My name is <strong>Gibril Dibba</strong>. I’m a 21-year Army veteran currently working as a
+                contractor with the U.S. Air Force. I have experience in computer repair, technical support, and
+                I’m expanding my skills in web programming and computer networking.
             </p>
-
             <ul>
-                <li> Degree: Computer Science</li>
-                <li> Likes: Technology, Learning, AI, Networking</li>
-                <li> Dislikes: Downtime, poor documentation</li>
+                <li><strong>Degree:</strong> Computer Science</li>
+                <li><strong>Likes:</strong> Technology, Learning, AI, Networking</li>
+                <li><strong>Dislikes:</strong> Downtime, poor documentation</li>
             </ul>
         </div>
     </section>
@@ -54,44 +53,54 @@
     <!-- PORTFOLIO SECTION -->
     <section id="work" class="bg-light py-5">
         <div class="container">
-            <h2>My Work</h2>
-            <p>
-                This section will showcase my web projects and assignments throughout this course.
+            <h2 class="mb-3">My Work</h2>
+            <p class="mb-4">
+                Below are some of my projects created for <strong>CSC322 - Web Programming</strong>.
+                Each demonstrates my growing expertise in web technologies.
             </p>
 
             <div class="row g-4">
-                <!-- Project Card 1 -->
+                <!-- Project 1: React Counter App -->
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">
-                                A simple web application built with HTML, CSS, and JavaScript.
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">React Counter App</h5>
+                            <p class="card-text flex-grow-1">
+                                A simple counter built using <strong>React.js</strong> that demonstrates state management and interactive UI updates.
                             </p>
+                            <a href="react-counter/index.html" class="btn btn-primary mt-auto" target="_blank">
+                                View Project
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project Card 2 -->
+                <!-- Project 2: jQuery To-Do List App -->
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">
-                                A responsive portfolio site using Bootstrap framework.
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">jQuery To-Do List App</h5>
+                            <p class="card-text flex-grow-1">
+                                A dynamic <strong>To-Do List</strong> web application that allows adding and removing tasks using jQuery for DOM manipulation.
                             </p>
+                            <a href="jquery-app/index.html" class="btn btn-success mt-auto" target="_blank">
+                                View Project
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Placeholder for future project -->
+                <!-- Project 3: Placeholder -->
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">
-                                Future project placeholder — more projects will be added here.
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Future Project</h5>
+                            <p class="card-text flex-grow-1">
+                                Placeholder for upcoming assignments and advanced web projects built throughout this course.
                             </p>
+                            <a href="#" class="btn btn-secondary disabled mt-auto">
+                                Coming Soon
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -100,8 +109,8 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="text-center text-light py-3 bg-dark">
-        <p>© 2025 Gibril Dibba | CSC322 - Web Programming</p>
+    <footer class="text-center text-light py-3 bg-dark mt-5">
+        <p class="mb-0">© 2025 Gibril Dibba | CSC322 - Web Programming</p>
     </footer>
 
     <!-- Bootstrap JS Bundle -->
