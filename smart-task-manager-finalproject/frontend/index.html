@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Auth Container -->
+        <div id="auth-container" class="container">
+            <div class="auth-box">
+                <h1 id="auth-title">Login</h1>
+                <form id="auth-form">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input-group" id="username-group" style="display: none;">
+                        <label for="username">Username</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" id="auth-btn" class="btn-primary">Login</button>
+                </form>
+                <p id="auth-switch">Don't have an account? <a href="#" id="switch-link">Register</a></p>
+            </div>
+        </div>
+
+        <!-- Dashboard Container -->
+        <div id="dashboard-container" class="container" style="display: none;">
+            <header>
+                <h2>Smart Task Manager</h2>
+                <div class="user-info">
+                    <span id="user-display"></span>
+                    <button id="logout-btn" class="btn-secondary">Logout</button>
+                </div>
+            </header>
+
+            <main>
+                <div class="controls">
+                    <button id="add-task-btn" class="btn-primary">+ Add Task</button>
+                    <div class="filters">
+                        <select id="status-filter">
+                            <option value="">All Status</option>
+                            <option value="pending">Pending</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                        <select id="sort-filter">
+                            <option value="">Sort By</option>
+                            <option value="due_date">Due Date</option>
+                            <option value="created_at">Created Date</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="task-list" class="task-list">
+                    <!-- Tasks will be injected here -->
+                </div>
+            </main>
+
+            <!-- Task Modal -->
+            <div id="task-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 id="modal-title">Add Task</h2>
+                    <form id="task-form">
+                        <input type="hidden" id="task-id">
+                        <div class="input-group">
+                            <label for="task-title">Title</label>
+                            <input type="text" id="task-title" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="task-desc">Description</label>
+                            <textarea id="task-desc"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label for="task-date">Due Date</label>
+                            <input type="date" id="task-date">
+                        </div>
+                        <div class="input-group" id="task-status-group" style="display: none;">
+                            <label for="task-status">Status</label>
+                            <select id="task-status">
+                                <option value="pending">Pending</option>
+                                <option value="completed">Completed</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary">Save Task</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
